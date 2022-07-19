@@ -1,0 +1,1 @@
+EXEC Lab4_MKP.dbo.ListOfClients 'Мойка окон'
