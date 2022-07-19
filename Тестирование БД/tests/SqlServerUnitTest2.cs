@@ -1,7 +1,6 @@
 ﻿using Microsoft.Data.Tools.Schema.Sql.UnitTesting;
 using Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NUnit.Framework.Internal;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,10 +10,10 @@ using System.Text;
 namespace DB
 {
     [TestClass()]
-    public class SqlServerUnitTest1 : SqlDatabaseTestClass
+    public class SqlServerUnitTest2 : SqlDatabaseTestClass
     {
 
-        public SqlServerUnitTest1()
+        public SqlServerUnitTest2()
         {
             InitializeComponent();
         }
@@ -48,13 +47,6 @@ namespace DB
             SqlExecutionResult[] posttestResults = TestService.Execute(this.PrivilegedContext, this.PrivilegedContext, testActions.PosttestAction);
         }
 
-        [TestMethod()]
-        public void SqlTest2()
-        {
-            DECLARE @Summa INT;
-            EXEC studentContracts 'Любовь Корнева', @Summa OUTPUT;
-            SELECT @Summa AS 'Сумма курсов'
-        }
         #region Designer support code
 
         /// <summary> 
