@@ -53,15 +53,7 @@ public class TestClass {
         }
         Assertions.assertEquals(1, this.person.category(18, 50, 170));
     }
-   /** @Test
-    void TestMethod3() throws PersonException {
-        Person person2 = new Person("", 17, 49, 163);
-        Throwable thrown = assertThrows(PersonException.class, () -> {
-            person2.FullName();
-        });
-        Assertions.assertNotNull(thrown.getMessage());
-        Assertions.assertEquals(1, this.person.category(18, 50, 170));
-    }*/
+   
 
     @Test
     void TestMethod4() throws PersonException {
@@ -113,17 +105,7 @@ public class TestClass {
         int expected=21+10;
         Assertions.assertEquals(expected, student.getScore());
     }
-    /**
-     * Тест с ограничением на время выполнения (если раскомментировать 1 строку - тест упадет)
-     * @throws InterruptedException
-     */
-    /**@Test
-    @Timeout(value=1, unit=TimeUnit.SECONDS) // в JUnit4 написали бы @Test(timeout = 100), где 100 - время в миллисекундах
-    void timeTest() throws InterruptedException {
-        // TimeUnit.SECONDS.sleep(10);
-        this.person.deposit(0.0);
-        Assertions.assertEquals(777.0, this.person.getBalance());
-    }*/
+    
 
 }
 
